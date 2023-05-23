@@ -1,0 +1,255 @@
+#N canvas -9 0 883 976 12;
+#X obj 53 843 cnv 15 750 70 empty empty empty 20 12 0 14 -262130 -66577
+0;
+#X obj 362 770 cnv 15 440 70 empty empty empty 20 12 0 14 -204786 -66577
+0;
+#X obj 53 699 cnv 15 750 70 empty empty empty 20 12 0 14 -204800 -66577
+0;
+#X obj 53 628 cnv 15 750 70 empty empty empty 20 12 0 14 -232576 -66577
+0;
+#X obj 213 726 s delay;
+#X obj 587 726 s feedback;
+#X obj 585 654 s depth;
+#X obj 211 654 s scanner;
+#X obj 374 654 s rate;
+#X obj 375 726 s deltime;
+#X obj 375 868 s revtime;
+#X obj 212 868 s reverb;
+#X obj 586 868 s damping;
+#X obj 377 795 s ramptime;
+#X obj 588 795 s rolloff;
+#X obj 66 726 s d/w_del;
+#X obj 64 654 s d/w_scn;
+#X obj 65 868 s d/w_rev;
+#X obj 53 368 cnv 15 750 190 empty empty empty 20 12 0 14 -261234 -66577
+0;
+#X obj 53 558 cnv 15 750 70 empty empty empty 20 12 0 14 -261682 -66577
+0;
+#X obj 488 76 cnv 15 315 70 empty empty empty 20 12 0 14 -229357 -66577
+0;
+#X obj 63 397 r bela_digitalIn13;
+#X obj 210 397 r bela_digitalIn16;
+#X obj 63 454 sel 0;
+#X obj 210 454 sel 0;
+#X obj 373 454 sel 0;
+#X obj 585 454 sel 0;
+#X obj 63 492 s btn1;
+#X obj 210 492 s btn2;
+#X obj 373 492 s btn3;
+#X obj 585 492 s btn4;
+#X obj 373 397 r bela_digitalIn25;
+#X obj 585 397 r bela_digitalIn20;
+#X obj 63 473 debounce 200;
+#X obj 210 473 debounce 200;
+#X obj 373 473 debounce 200;
+#X obj 585 473 debounce 200;
+#X obj 53 76 cnv 15 435 70 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 63 120 s bela_setDigital;
+#X obj 63 82 loadbang;
+#X msg 63 101 in 13 \, in 16 \, in 25 \, in 20 \, in 22 \, in 23 \,
+out 19 \, out 21;
+#X obj 619 101 oled;
+#X obj 658 101 expr_in;
+#X obj 587 101 led;
+#X obj 534 101 fx_sel;
+#X obj 718 101 gui;
+#X obj 53 147 cnv 15 750 220 empty empty empty 20 12 0 14 -208384 -66577
+0;
+#X obj 63 176 r bela_digitalIn22;
+#X obj 480 176 r bela_digitalIn23;
+#X obj 126 305 s bang;
+#X obj 480 271 s bypass;
+#X obj 480 233 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 63 435 spigot;
+#X obj 102 416 r bypass;
+#X obj 210 435 spigot;
+#X obj 249 416 r bypass;
+#X obj 373 435 spigot;
+#X obj 412 416 r bypass;
+#X obj 585 435 spigot;
+#X obj 624 416 r bypass;
+#X obj 63 214 spigot;
+#X obj 102 195 r bypass;
+#X obj 53 915 cnv 15 300 70 empty empty empty 20 12 0 14 -248889 -66577
+0;
+#X obj 66 939 s loop1;
+#X obj 480 252 spigot;
+#X obj 601 195 r fx4;
+#X obj 601 252 * -1;
+#X obj 601 271 + 1;
+#X obj 518 290 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 648 214 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 538 240 loadbang;
+#X obj 601 214 spigot;
+#X obj 601 233 s stop_loop;
+#X obj 63 252 spigot;
+#X obj 112 252 r fx4;
+#X obj 126 286 spigot;
+#X obj 288 176 r disable_bang;
+#X obj 193 176 r eanble_bang;
+#X obj 165 195 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 288 234 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 288 195 * -1;
+#X obj 288 214 + 1;
+#X obj 249 271 spigot;
+#X obj 249 309 s start_loop;
+#X msg 222 289 0;
+#X msg 571 214 1;
+#X obj 295 257 r clock_in;
+#X obj 295 277 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 249 290 spigot;
+#X obj 64 635 encoder 1 1 0 1 50;
+#X obj 66 707 encoder 1 2 0 1 50;
+#X obj 65 849 encoder 1 3 0 1 50;
+#X obj 211 635 encoder 2 1 0 1 50 1;
+#X obj 213 707 encoder 2 2 0 1 50 1;
+#X obj 212 849 encoder 2 3 0 1 50 1;
+#X obj 67 920 encoder 1 4 0 1 50 1;
+#X obj 377 776 encoder 3 2.2 5 2000 0.1 300;
+#X obj 588 776 encoder 4 2.2 30 150 0.5 115;
+#X obj 587 707 encoder 4 2.1 0 1 50 0.5;
+#X obj 585 635 encoder 4 1 0 1 50 0.5;
+#X obj 374 635 encoder 3 1 0 1 50 0.25;
+#X text 552 293 change function of [bypass;
+#X text 547 308 depending on the fx selected;
+#X text 261 434 block signal if;
+#X text 266 448 bypass is off;
+#X text 674 478 prevent multiple;
+#X text 652 492 triggers for one push;
+#X text 62 516 rotary sw 1;
+#X text 206 514 rotary sw 2;
+#X text 370 513 rotary sw 4;
+#X text 580 515 rotary sw 3;
+#X text 69 533 top left;
+#X text 213 532 top right;
+#X text 370 532 bottom right;
+#X text 581 532 bottom left;
+#X text 64 606 rotary encoder received from the customized render.cpp
+file, f 60;
+#X text 64 590 abstarctions designed to interpret and route the value
+of each, f 63;
+#X text 692 590 more details in;
+#X text 685 605 the abstractions;
+#X text 559 340 otherwise used as bypass);
+#X text 547 324 (used as stop/clear for fx4;
+#X text 61 374 receive values read for rotary encoder switches (connected
+to digital pin 2 \, 5 \, 14 and 9), f 89;
+#X text 62 151 receive values read for [bang] (digital pin 12) and
+[bypass] (digital pin 11), f 77;
+#X text 692 663 more details in;
+#X text 685 678 the abstractions;
+#X text 368 817 encoder abstarctions for the additional tape_delay
+parameters, f 61;
+#X text 64 746 encoder abstarctions for the initial tape_delay parameters
+;
+#X text 64 675 encoder abstarction for each scanner_vibrato parameter
+, f 55;
+#X text 62 891 encoder abstarction for each freeverb parameter;
+#X text 55 38 Detailed information on reading digital inputs with Bela
+at:, f 67;
+#X text 55 52 https://learn.bela.io/tutorials/pure-data/connecting/digital-input/
+, f 67;
+#X text 534 122 look inside for more details;
+#X obj 63 564 encoder_in 1;
+#X obj 210 564 encoder_in 2;
+#X obj 373 564 encoder_in 3;
+#X obj 584 564 encoder_in 4;
+#X text 55 15 Read and address digital data received from the effect
+cape., f 67;
+#X text 665 533 --> on effect cape;
+#X obj 586 849 encoder 4 3 0 1 50;
+#X obj 375 849 encoder 3 3 0 1 50 0.25;
+#X text 416 454 trigger only when;
+#X text 465 468 button is down;
+#X obj 480 195 debounce 200;
+#X obj 63 233 debounce 200;
+#X text 65 962 encoder abstarction for looper volume;
+#X obj 235 271 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 135 328 change function of [bang];
+#X text 134 344 to restart loop if stopped;
+#X obj 375 707 encoder 3 2.1 10 2000 0.1 10;
+#X text 515 80 subpatches with different functions;
+#X text 175 80 set digitals pins as input or output;
+#X connect 21 0 52 0;
+#X connect 22 0 54 0;
+#X connect 23 0 33 0;
+#X connect 24 0 34 0;
+#X connect 25 0 35 0;
+#X connect 26 0 36 0;
+#X connect 31 0 56 0;
+#X connect 32 0 58 0;
+#X connect 33 0 27 0;
+#X connect 34 0 28 0;
+#X connect 35 0 29 0;
+#X connect 36 0 30 0;
+#X connect 39 0 40 0;
+#X connect 40 0 38 0;
+#X connect 47 0 60 0;
+#X connect 48 0 142 0;
+#X connect 51 0 64 0;
+#X connect 52 0 23 0;
+#X connect 53 0 52 1;
+#X connect 54 0 24 0;
+#X connect 55 0 54 1;
+#X connect 56 0 25 0;
+#X connect 57 0 56 1;
+#X connect 58 0 26 0;
+#X connect 59 0 58 1;
+#X connect 60 0 143 0;
+#X connect 61 0 60 1;
+#X connect 64 0 50 0;
+#X connect 65 0 66 0;
+#X connect 65 0 69 0;
+#X connect 66 0 67 0;
+#X connect 67 0 68 0;
+#X connect 68 0 64 1;
+#X connect 69 0 71 1;
+#X connect 71 0 72 0;
+#X connect 71 0 85 0;
+#X connect 73 0 82 0;
+#X connect 73 0 145 0;
+#X connect 74 0 73 1;
+#X connect 75 0 49 0;
+#X connect 76 0 78 0;
+#X connect 76 0 80 0;
+#X connect 77 0 78 0;
+#X connect 77 0 80 0;
+#X connect 78 0 75 1;
+#X connect 79 0 82 1;
+#X connect 80 0 81 0;
+#X connect 81 0 79 0;
+#X connect 82 0 84 0;
+#X connect 82 0 88 0;
+#X connect 82 0 145 0;
+#X connect 85 0 51 0;
+#X connect 86 0 87 0;
+#X connect 87 0 88 1;
+#X connect 88 0 83 0;
+#X connect 89 0 16 0;
+#X connect 90 0 15 0;
+#X connect 91 0 17 0;
+#X connect 92 0 7 0;
+#X connect 93 0 4 0;
+#X connect 94 0 11 0;
+#X connect 95 0 63 0;
+#X connect 96 0 13 0;
+#X connect 97 0 14 0;
+#X connect 98 0 5 0;
+#X connect 99 0 6 0;
+#X connect 100 0 8 0;
+#X connect 138 0 12 0;
+#X connect 139 0 10 0;
+#X connect 142 0 51 0;
+#X connect 142 0 71 0;
+#X connect 143 0 73 0;
+#X connect 145 0 75 0;
+#X connect 148 0 9 0;
+#X coords 0 976 1 975 85 60 0;
