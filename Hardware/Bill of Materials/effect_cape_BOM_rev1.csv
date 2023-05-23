@@ -1,0 +1,16 @@
+NAME,VALUE,FOOTPRINT,QUANTITY,LINK
+"R1, R2, R3, R4, R5, R6, R8, R9, R10, R11, R12, R13, R14, R15",10k,R_0603_1608Metric,14,https://www.reichelt.at/de/en/smd-chip-resistor-0603-10-kohm-100-mw-1--vis-crcw060310k-p238029.html?&trstct=pos_0&nbc=1
+R7,240R,R_0603_1608Metric,1,https://www.reichelt.at/de/en/smd-chip-resistor-0603-220-ohm-100-mw-1--vis-crcw0603220-p238041.html?search=CRCW0603220&&r=1
+SW,SW_Push,SW_Tactile_SPST_Angled_PTS645Vx58-2LFS,1,https://www.reichelt.at/de/en/short-stroke-key-6-6x7-4-mm-height-3-15-mm-12-v-horizontal-taster-3305-p27895.html?&trstct=pos_0&nbc=1
+"Enc_1, Enc_2, Enc_3, Enc_4",RotaryEncoder_Switch,RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm,4,https://www.reichelt.at/de/en/alps-stec12e-rotary-pulse-encoder-24-24-vert-w-pb-stec12e08-p73923.html?&trstct=pos_0&nbc=1
+"Input Left (Mono), Output Left, Output Right",NEUTRIK NR-J4HF,Jack_6.35mm_Neutrik_NRJ4HF_Horizontal,3,https://www.reichelt.at/de/en/neutrik-jack-socket-6-35-mm-mono-slim-neutrik-nr-j4hf-p116983.html?search=NEUTRIK+NR%02J4HF&&r=1
+"Momentary Footswitch, Momentary Footswitch",Thomann PF4520 ,,2,https://www.thomann.de/gb/thomann_fusstaster.htm
+Expression Pedal Input,NEUTRIK NR-J6HF,Jack_6.35mm_Neutrik_NRJ6HF_Horizontal,1,https://www.reichelt.at/de/en/neutrik-jack-socket-6-35-mm-stereo-slim-neutrik-nr-j6hf-p116984.html?search=NEUTRIK+NR%02J6HF&&r=1
+Headphone Output (Stereo),CUI Devices SJ1-3535NG,Jack_3.5mm_CUI_SJ1-3535NG_Horizontal,1,https://www.mouser.co.uk/ProductDetail/CUI-Devices/SJ1-3535NG?qs=WyjlAZoYn50jUmKVsqeRJw%3D%3D
+LED Blue/Red,LED_Dual_AKA,LED_D3.0mm-3,1,https://www.tme.eu/ro/en/details/osrbmc5b31a/tht-leds-round/optosupply/
+OLED,SSD1306,,1,https://arduino-projekte.info/produkt/0-96%e2%80%b3-oled-display-128x64-i2c-ssd1315-white/
+"J1, J2",Conn_02x18_Odd_Even,PinHeader_2x18_P2.54mm_Vertical,2,https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/61301821121?qs=PhR8RmCirEaqwz8GJH1NvA%3D%3D
+"J3, J4",Conn_01x03_Female,PinSocket_1x03_P2.54mm_Vertical,2,https://www.reichelt.at/de/en/sockets-2-54-mm-1x03-straight-mpe-094-1-003-p119912.html?&trstct=pos_0&nbc=1
+J7,Conn_02x02_Odd_Even,PinHeader_2x02_P2.54mm_Vertical,1,https://www.reichelt.at/de/en/pin-headers-2-54-mm-2x02-straight-mpe-087-2-004-p119892.html?&trstct=pos_0&nbc=1
+J11,Conn_01x01_Male,PinHeader_1x01_P2.54mm_Vertical,1,https://www.reichelt.at/de/en/pin-headers-2-54-mm-1x02-straight-mpe-087-1-002-p119879.html?&trstct=pol_5&nbc=1
+J12,Jack-DC,BarrelJack_Horizontal,1,https://www.reichelt.at/de/en/built-in-coupling-solder-lugs-cliff-fcr681465-p227725.html?&trstct=pos_0&nbc=1
