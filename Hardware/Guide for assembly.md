@@ -14,7 +14,7 @@ Step 3. Attach 3x NEUTRIK NR-J4HF to the audio input and outputs, 1x NEUTRIK NR-
 
 Step 4. Add the DC Jack Barrel (J12) and the Push Button (SW). (optional - include only if you need this type of power supply) 
 
-Step 5. Add the 2x2 male header (J7) onto the PCB. Securely fasten both Foot Switches in their designated positions. Connect the pins to the legs of the switches.
+Step 5. Add the 2x2 male header (J7) onto the PCB. Securely fasten both (PF4520) Foot Switches in their designated positions. Connect the pins to the legs of the switches.
 
 Step 6. Attach the Rotary Encoders (Enc_1, Enc_2, Enc_3, Enc_4). Make sure that their bottom side doesn’t touch any of the pins beneath them. 
 
