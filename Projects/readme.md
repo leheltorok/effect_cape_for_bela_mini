@@ -5,21 +5,32 @@ This project serves as a demonstration of utilizing the effect_cape in a multi-e
 **The audio effects included are as follows:** (their order is interchangeable in the _main patch)
 
 [scanner] Hammond's Scanner Vibrato simulator with an adjustable rate, depth, and mix.
+
 [tapedelay] Tape delay simulator with variable-speed tape and saturation.
+
 [freeverb] Schroeder reverberator implementation using the Freeverb algorithm.
+
 [looper] Looper with overdub capability and clock synchronized to the first layer.
 
 
 **Code for executing all the hardware functionality:**
 
 Custom libpd render.cpp to read and send 4 rotary encoder values to a Pure Data patch.
+
 [interface] Read and address digital data received from the effect_cape.
+
 [encoder_in] Receive and interpret initialized encoder value from the render.cpp file.
+
 [encoder] Set up a separate control value for each parameter.
+
 [expr_in] Read and route expression pedal signal connected to Analog In 0
+
 [fx_sel] Skip back and forth between effects.
+
 [led] Control bicolor LED to provide visual feedback for different states and changes.
+
 [oled] Transmit OSC messages to drive OLED screen connected to the I2C2 pins.
+
 [gui] Display and control parameters via a smartphone or tablet.
 
 
