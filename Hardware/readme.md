@@ -1,7 +1,9 @@
 Guide for assembly.
 
+
 The PCB of the effect_cape is not available for commercial sale, so you will have to order it yourself. In order to do so, you will only have to submit the file ‘effect_cape_rev1.kicad_pcb’ to any company that specializes in manufacturing PCB prototypes. (this will be the cheapest and fastest way to get your PCB)
--
+
+
 After you have the PCB and all parts (see BOM) you can start the assembly.
 
 For the exact  position of the parts refer to the interactive BOM: https://www.dropbox.com/s/17bvmpcd8jzs7nz/ibom.html?dl=0
