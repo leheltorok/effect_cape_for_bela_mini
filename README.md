@@ -11,7 +11,10 @@ https://www.youtube.com/watch?v=Ah0W3sH00xs&ab_channel=LehelTorok
 ![effect_cape](/Pictures/effect_cape_10.jpg "effects_cape")
 
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+
+Lehel Török - 2023
+
+I would like to express my gratitude to the Bela team for providing exceptional tutorials and their invaluable support on the community forum. Additionally, I extend my thanks to the user community for generously sharing excellent code examples, which serve as a solid foundation for all of us to build upon.
 
 ## License
 For open source projects, say how it is licensed.
