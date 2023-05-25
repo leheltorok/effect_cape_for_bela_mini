@@ -17,6 +17,9 @@ Lehel Török - 2023
 I would like to express my gratitude to the Bela team for providing exceptional tutorials and their invaluable support on the community forum. Additionally, I extend my thanks to the user community for generously sharing excellent code examples, which serve as a solid foundation for all of us to build upon.
 
 ## License
-For open source projects, say how it is licensed.
+
+Creative Commons Attribution Sharealike 3.0 license (or CC-BY-SA) 
+https://creativecommons.org/licenses/by-sa/3.0/
+
 
 
