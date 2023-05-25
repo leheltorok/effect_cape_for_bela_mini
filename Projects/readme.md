@@ -65,6 +65,7 @@ In order to access the GUI, you need to establish an internet connection between
 For instructions refer to: https://learn.bela.io/using-bela/bela-techniques/connecting-to-wifi/
 
 Once establishing a network connection with the board, you can launch the IDE in order to access the GUI.
+(By adding it to your home screen, you can transform the GUI into a mobile app.)
 
 Up until now, I have been using the TPLINK TL-WN725N WLAN-Adapter, which cannot function as a wireless access point but can connect to other devices' hotspots.
 
