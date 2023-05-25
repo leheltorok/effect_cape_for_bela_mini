@@ -14,6 +14,8 @@ This project serves as a demonstration of utilizing the effect_cape in a multi-e
 
 [looper] Looper with overdub capability and clock synchronized to the first layer.
 
+(For more information on each patch, see the content within.)
+
 
 **Code for executing all the hardware functionality:**
 
@@ -34,6 +36,8 @@ Custom libpd render.cpp to read and send 4 rotary encoder values to a Pure Data 
 [oled] Transmit OSC messages to drive OLED screen connected to the I2C2 pins.
 
 [gui] Display and control parameters via a smartphone or tablet.
+
+(For more information on each patch, see the content within.)
 
 
 **Interacting with the physical interface:**
