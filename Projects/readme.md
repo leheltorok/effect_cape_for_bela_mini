@@ -79,3 +79,5 @@ To run the display you need to download the full repository from the link above 
 
 To operate the screen alongside the Delay_Chain project, you will have to set it up to run as a service at boot, by following the instructions provided in this guide: https://learn.bela.io/using-bela/bela-techniques/running-a-program-as-a-service/
 
+
+![routing_diagram](/Hardware/routing_diagram.jpg "routing_diagram")
