@@ -8,6 +8,9 @@ Demo Video:
 https://www.youtube.com/watch?v=Ah0W3sH00xs&ab_channel=LehelTorok
 
 
+![effect_cape](https://git.iem.at/s52103627/effect-cape-for-bela-mini/-/blob/a78096cfe20a23b85c33fc4f8a846ca54b300322/Pictures/effect_cape_10.jpg)
+
+
 ## Authors and acknowledgment
 Show your appreciation to those who have contributed to the project.
 
