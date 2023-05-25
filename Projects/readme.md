@@ -64,6 +64,8 @@ The top left rotary encoder switch is designated to enable/disable the expressio
 In order to access the GUI, you need to establish an internet connection between your device and Bela. The simplest method is to connect a Wi-Fi dongle to Bela's USB port and configure it to automatically connect to your phone's hotspot. 
 For instructions refer to: https://learn.bela.io/using-bela/bela-techniques/connecting-to-wifi/
 
+Once establishing a network connection with the board, you can launch the IDE in order to access the GUI.
+
 Up until now, I have been using the TPLINK TL-WN725N WLAN-Adapter, which cannot function as a wireless access point but can connect to other devices' hotspots.
 
 
