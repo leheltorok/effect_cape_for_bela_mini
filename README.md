@@ -8,7 +8,7 @@ Demo Video:
 https://www.youtube.com/watch?v=Ah0W3sH00xs&ab_channel=LehelTorok
 
 
-![effect_cape](/Pictures/effect_cape.jpg "effects_cape")
+![effect_cape](/Pictures/effect_cape_10.jpg "effects_cape")
 
 ## Authors and acknowledgment
 
