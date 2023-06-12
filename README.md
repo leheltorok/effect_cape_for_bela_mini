@@ -18,8 +18,8 @@ I would like to express my gratitude to the Bela team for providing exceptional 
 
 ## License
 
-Creative Commons Attribution Sharealike 3.0 license (or CC-BY-SA) 
-https://creativecommons.org/licenses/by-sa/3.0/
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+https://creativecommons.org/licenses/by-sa/4.0/
 
 
 
