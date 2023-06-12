@@ -26,13 +26,13 @@
 #X connect 4 0 3 0;
 #X restore 388 339 pd into_blocks;
 #X obj 388 358 s new_length;
-#X obj 1012 703 r new_length;
+#X obj 898 745 r new_length;
 #X obj 679 677 spigot;
 #X obj 599 556 sel 1 0, f 12;
 #X msg 599 588 bang;
 #X msg 634 588 stop;
 #X obj 599 635 s~ main_out;
-#X obj 1005 752 r empty_table;
+#X obj 891 794 r empty_table;
 #X obj 1100 276 t f f;
 #X obj 1100 314 s loop_on_off;
 #X obj 599 536 t f f, f 6;
@@ -42,7 +42,7 @@
 #X obj 277 548 r new_cycle;
 #X obj 96 605 tabwrite~ bande;
 #X obj 599 613 tabplay~ bande;
-#X obj 1004 808 table bande;
+#X obj 890 850 table bande;
 #N canvas 1078 264 252 282 limiter 0;
 #X obj 24 22 inlet~;
 #X obj 24 169 *~;
@@ -116,8 +116,8 @@
 #X obj 97 774 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 1127 296 switch~;
-#X msg 1005 773 \; bande const 0 \;;
-#X msg 1005 722 \; bande resize \$1 \;;
+#X msg 891 815 \; bande const 0 \;;
+#X msg 891 764 \; bande resize \$1 \;;
 #X obj 439 646 *~;
 #X obj 454 625 line~;
 #X obj 454 605 pack 0 5;
@@ -128,7 +128,7 @@
 #X obj 421 251 loadbang;
 #X obj 388 302 select 1 0, f 14;
 #X obj 388 321 timer 1 sample;
-#X msg 1005 684 441000;
+#X msg 891 726 441000;
 #X obj 388 283 spigot;
 #X obj 350 217 sel 0;
 #X msg 350 251 0, f 4;
@@ -142,12 +142,12 @@
 #X obj 317 415 spigot;
 #X obj 111 392 inlet~;
 #X obj 441 725 outlet~;
-#X obj 1120 421 spigot;
-#X obj 1153 401 r fx4;
-#X obj 856 255 r stop_loop;
-#X obj 1059 466 spigot;
-#X msg 1092 438 1;
-#X obj 1059 489 del 10;
+#X obj 1120 482 spigot;
+#X obj 1153 462 r fx4;
+#X obj 856 162 r stop_loop;
+#X obj 1059 527 spigot;
+#X msg 1092 499 1;
+#X obj 1059 550 del 10;
 #X obj 817 399 spigot;
 #X obj 817 418 s clear_array;
 #X obj 856 384 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -156,15 +156,15 @@
 #X obj 856 333 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 856 355 1;
-#X msg 1059 438 0;
-#X obj 1059 418 loadbang;
+#X msg 1059 499 0;
+#X obj 1059 479 loadbang;
 #X obj 906 294 loadbang;
 #X obj 856 309 del 100;
-#X obj 974 449 r start_loop;
-#X obj 1059 529 s eanble_bang;
-#X obj 1120 457 s disable_bang;
-#X msg 1120 438 0;
-#X msg 1059 508 1;
+#X obj 974 510 r start_loop;
+#X obj 1059 590 s eanble_bang;
+#X obj 1120 518 s disable_bang;
+#X msg 1120 499 0;
+#X msg 1059 569 1;
 #X obj 856 274 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 856 290 spigot;
@@ -197,7 +197,7 @@
 #X obj 142 740 r fx4;
 #X msg 385 251 1, f 4;
 #X obj 1072 225 del 2;
-#X obj 1062 668 del 10;
+#X obj 948 710 del 10;
 #X obj 679 658 del 2;
 #X obj 1115 225 spigot;
 #X obj 1189 210 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
@@ -208,17 +208,17 @@
 #X obj 261 344 s clock_set;
 #X obj 1189 154 r loop_status;
 #X obj 679 639 r clock_set;
-#X obj 1005 664 loadbang;
+#X obj 891 706 loadbang;
 #X obj 1072 184 r clear_array;
-#X obj 1062 648 r clear_array;
+#X obj 948 690 r clear_array;
 #X obj 386 232 r clear_array;
-#X obj 1120 383 r stop_loop;
-#X obj 1121 490 r clear_array;
+#X obj 1120 355 r stop_loop;
+#X obj 1121 551 r clear_array;
 #X text 1070 155 Start/Stop Loop;
-#X text 826 231 Clear Array;
+#X text 740 208 Clear Array;
 #X obj 207 156 r bang_0;
 #X obj 317 455 s bang_0;
-#X text 1021 626 Set/Resize Array;
+#X text 907 668 Set/Resize Array;
 #X text 521 718 Play the table (loop) continuously.;
 #X text 94 713 Save loop as a .wav file.;
 #X text 491 301 Get the duration between;
@@ -290,6 +290,18 @@
 in;
 #X text 479 36 1 channel looper with overdub capability and clock synchronized
 to the first layer, f 83;
+#X obj 889 241 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 889 203 * -1;
+#X obj 889 222 + 1;
+#X obj 889 185 r loop_status;
+#X obj 856 258 spigot;
+#X obj 1152 428 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 1152 390 * -1;
+#X obj 1152 409 + 1;
+#X obj 1152 372 r loop_status;
+#X obj 1120 445 spigot;
 #X connect 0 0 5 0;
 #X connect 0 0 56 0;
 #X connect 0 0 57 0;
@@ -362,7 +374,7 @@ to the first layer, f 83;
 #X connect 68 0 87 0;
 #X connect 68 0 72 0;
 #X connect 69 0 68 1;
-#X connect 70 0 89 0;
+#X connect 70 0 158 0;
 #X connect 71 0 73 0;
 #X connect 72 0 71 1;
 #X connect 73 0 80 0;
@@ -428,7 +440,17 @@ to the first layer, f 83;
 #X connect 129 0 97 0;
 #X connect 130 0 118 0;
 #X connect 131 0 116 0;
-#X connect 132 0 68 0;
+#X connect 132 0 163 0;
 #X connect 133 0 88 0;
 #X connect 136 0 0 0;
 #X connect 147 0 99 0;
+#X connect 154 0 158 1;
+#X connect 155 0 156 0;
+#X connect 156 0 154 0;
+#X connect 157 0 155 0;
+#X connect 158 0 89 0;
+#X connect 159 0 163 1;
+#X connect 160 0 161 0;
+#X connect 161 0 159 0;
+#X connect 162 0 160 0;
+#X connect 163 0 68 0;
