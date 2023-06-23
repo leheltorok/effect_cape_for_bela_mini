@@ -1,6 +1,6 @@
 
 The enclosure can be crafted using any laser-cuttable material that is 3mm thick. 
-I opted for a 3mm thick acrylic sheet, eliminating the need for engravings.
+I opted for a 3mm thick transparent acrylic sheet, eliminating the need for engravings.
 
 Additionally, to hold the case together, you will need: 
 
