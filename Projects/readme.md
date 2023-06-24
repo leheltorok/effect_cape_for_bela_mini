@@ -35,6 +35,8 @@ Custom libpd render.cpp to read and send 4 rotary encoder values to a Pure Data 
 
 [oled] Transmit OSC messages to drive OLED screen connected to the I2C2 pins.
 
+[latency_mix] Debounce value sent to the OLED screen.
+
 [gui] Display and control parameters via a smartphone or tablet.
 
 (For more information on each patch, see the content within.)
