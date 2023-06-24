@@ -1,69 +1,91 @@
-#N canvas 959 149 809 689 12;
-#X obj 289 204 f 0;
-#X obj 318 246 f;
-#X obj 318 268 t b f;
-#X obj 289 268 f;
-#X obj 289 302 ==;
-#X obj 289 392 sel 1;
-#X obj 196 441 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#N canvas -9 -9 1920 976 12;
+#X obj 651 227 f 0;
+#X obj 680 269 f;
+#X obj 680 291 t b f;
+#X obj 651 291 f;
+#X obj 651 325 ==;
+#X obj 651 415 sel 1;
+#X obj 558 464 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 348 441 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 710 464 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 318 205 + 1;
-#X obj 173 204 f 0;
-#X obj 202 246 f;
-#X obj 202 268 t b f;
-#X obj 173 268 f;
-#X obj 173 302 ==;
-#X obj 173 392 sel 1;
-#X obj 202 204 - 1;
-#X msg 196 422 0;
-#X msg 157 422 1;
-#X msg 271 422 0;
-#X msg 309 421 1;
-#X obj 220 392 loadbang;
-#X obj 319 225 del 1;
-#X obj 204 224 del 1;
-#X obj 215 154 spigot;
-#X obj 254 134 r bypass;
-#X text 61 325 check if value decreased or increased;
-#X text 485 287 send bang for each change;
-#X text 529 182 for one rotation step;
-#X text 531 165 prevent multiple triggers;
-#X text 367 439 send 1 if increased;
-#X text 52 441 send 1 if decreased;
-#X obj 196 461 s -\$1/1e;
-#X obj 196 483 s -\$1/2e;
-#X obj 196 505 s -\$1/2.1e;
-#X obj 196 527 s -\$1/2.2e;
-#X obj 196 550 s -\$1/3e;
-#X obj 196 571 s -\$1/4e;
-#X obj 348 461 s +\$1/1e;
-#X obj 348 484 s +\$1/2e;
-#X obj 348 506 s +\$1/2.1e;
-#X obj 348 528 s +\$1/2.2e;
-#X obj 348 549 s +\$1/3e;
-#X obj 348 570 s +\$1/4e;
-#X text 44 595 createa a negative (-) and positive (+) encoder (e)
+#X obj 680 228 + 1;
+#X obj 535 227 f 0;
+#X obj 564 269 f;
+#X obj 564 291 t b f;
+#X obj 535 291 f;
+#X obj 535 325 ==;
+#X obj 535 415 sel 1;
+#X obj 564 227 - 1;
+#X msg 558 445 0;
+#X msg 519 445 1;
+#X msg 633 445 0;
+#X msg 671 444 1;
+#X obj 582 415 loadbang;
+#X obj 681 248 del 1;
+#X obj 566 247 del 1;
+#X obj 577 177 spigot;
+#X obj 616 157 r bypass;
+#X text 474 358 check if value decreased or increased;
+#X text 138 523 send bang for each change;
+#X text 729 462 send 1 if increased;
+#X text 414 464 send 1 if decreased;
+#X obj 558 484 s -\$1/1e;
+#X obj 558 506 s -\$1/2e;
+#X obj 558 528 s -\$1/2.1e;
+#X obj 558 550 s -\$1/2.2e;
+#X obj 558 573 s -\$1/3e;
+#X obj 558 594 s -\$1/4e;
+#X obj 710 484 s +\$1/1e;
+#X obj 710 507 s +\$1/2e;
+#X obj 710 529 s +\$1/2.1e;
+#X obj 710 551 s +\$1/2.2e;
+#X obj 710 572 s +\$1/3e;
+#X obj 710 593 s +\$1/4e;
+#X text 406 618 createa a negative (-) and positive (+) encoder (e)
 send for each fx number, f 76;
-#X text 527 223 receive touch value from GUI;
-#X text 520 237 (this shoud not be debounced);
-#X obj 453 227 r touch\$1;
-#X obj 439 286 s \$1v;
-#X obj 215 94 receive encoder\$1;
-#X text 38 12 Receive and interpret value of the initialized encoder
+#X obj 92 522 s \$1v;
+#X text 138 29 Receive and interpret value of the initialized encoder
 (\$1) from the customized render.cpp file., f 96;
-#X text 40 134 block signal if bypass is off;
-#X obj 439 173 debounce 25;
-#X floatatom 357 132 5 0 0 0 - - -;
-#X text 38 48 https://learn.bela.io/tutorials/pure-data/advanced/custom-render/
+#X text 138 65 https://learn.bela.io/tutorials/pure-data/advanced/custom-render/
 , f 65;
-#X text 343 94 receive encoder value from customized render.cpp file.
-, f 96;
-#X text 38 31 Detailed information on combining Pure Data and C++ at:
+#X text 127 136 receive encoder value from customized render.cpp file.
+, f 55;
+#X text 138 48 Detailed information on combining Pure Data and C++
+at:;
+#X text 477 635 (each pair is received by the matching encoder abstraction)
 ;
-#X text 115 612 (each pair is received by the matching encoder abstraction)
+#X obj 91 446 spigot;
+#X obj 172 446 spigot;
+#X obj 197 261 f;
+#X floatatom 197 283 5 0 0 0 - - -;
+#X floatatom 130 306 5 0 0 0 - - -;
+#X obj 197 305 t b f;
+#X obj 130 349 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 211 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 211 386 * -1;
+#X obj 211 408 + 1;
+#X obj 130 264 loadbang;
+#X obj 130 367 change;
+#X msg 130 285 4;
+#X obj 130 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 130 220 abs;
+#X obj 197 239 del 1;
+#X obj 172 465 debounce 30;
+#X obj 130 324 expr if ($f1 > $f2 + 3 || -$f1 > -$f2 + 3 \, 1 \, 0)
 ;
+#X obj 130 158 receive encoder\$1;
+#X obj 130 200 spigot;
+#X obj 169 181 r bypass;
+#X text 247 177 <----- block signal if bypass is off ----->;
+#X text 156 219 get only positive numbers;
+#X text 247 274 check if value change;
+#X text 248 293 is greater than 3;
+#X text 81 484 debounce only for slow rotation;
+#X text 68 499 (if value change is smaller than 3);
 #X connect 0 0 8 0;
 #X connect 0 0 3 0;
 #X connect 1 0 2 0;
@@ -73,18 +95,18 @@ send for each fx number, f 76;
 #X connect 4 0 5 0;
 #X connect 5 0 18 0;
 #X connect 5 0 19 0;
+#X connect 6 0 29 0;
+#X connect 6 0 30 0;
 #X connect 6 0 31 0;
 #X connect 6 0 32 0;
 #X connect 6 0 33 0;
 #X connect 6 0 34 0;
-#X connect 6 0 35 0;
-#X connect 6 0 36 0;
+#X connect 7 0 35 0;
+#X connect 7 0 36 0;
 #X connect 7 0 37 0;
 #X connect 7 0 38 0;
 #X connect 7 0 39 0;
 #X connect 7 0 40 0;
-#X connect 7 0 41 0;
-#X connect 7 0 42 0;
 #X connect 8 0 0 1;
 #X connect 8 0 1 1;
 #X connect 8 0 21 0;
@@ -110,11 +132,33 @@ send for each fx number, f 76;
 #X connect 22 0 10 0;
 #X connect 23 0 9 0;
 #X connect 23 0 0 0;
-#X connect 23 0 51 0;
 #X connect 24 0 23 1;
-#X connect 46 0 47 0;
-#X connect 48 0 23 0;
-#X connect 51 0 47 0;
-#X connect 52 0 51 0;
-#X connect 52 0 0 0;
-#X connect 52 0 9 0;
+#X connect 48 0 42 0;
+#X connect 49 0 64 0;
+#X connect 50 0 51 0;
+#X connect 51 0 53 0;
+#X connect 52 0 65 0;
+#X connect 53 0 65 0;
+#X connect 53 1 65 1;
+#X connect 54 0 59 0;
+#X connect 55 0 49 1;
+#X connect 56 0 57 0;
+#X connect 57 0 55 0;
+#X connect 58 0 60 0;
+#X connect 58 0 51 0;
+#X connect 59 0 61 0;
+#X connect 59 0 56 0;
+#X connect 60 0 65 0;
+#X connect 61 0 48 1;
+#X connect 62 0 52 0;
+#X connect 62 0 50 1;
+#X connect 62 0 63 0;
+#X connect 63 0 50 0;
+#X connect 64 0 42 0;
+#X connect 65 0 54 0;
+#X connect 66 0 23 0;
+#X connect 66 0 67 0;
+#X connect 66 0 48 0;
+#X connect 66 0 49 0;
+#X connect 67 0 62 0;
+#X connect 68 0 67 1;
