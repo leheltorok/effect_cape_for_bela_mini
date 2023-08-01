@@ -42,6 +42,8 @@
 #include <string.h>
 #include <vector>
 
+#include <libraries/Encoder/Encoder.h>
+
 #if (defined(BELA_LIBPD_GUI) || defined(BELA_LIBPD_TRILL))
 #include <libraries/Pipe/Pipe.h>
 template <typename T>
